@@ -5,7 +5,7 @@ PROYECTO S.I.S.G.M
 
 
 Este proyecto incluye dos modulos dirigidos a ayudar a la digitalizacion de sistemas hospitalarios, especialmente el Hospital de Clinicas que se ubica en Uruguay, Montevideo.
-El primer modulo seria este, consiste en la digitalizacion de la documentacion, generando un sistema de gestion de documentos digitales, se plantea incluir QR para acceder a ellos.
+El segundo modulo seria este, consiste en la gestion de solicitudes de traslado, como objetivo tenemos crear un sistema que ayude en esa tarea.
 Planeamos crear este modulo de la siguiente manera: La infraestructura de la aplicacion serian 3 contenedores de Docker, 1 la aplicacion (Incluyendo servidor Apache, sistema PHP para backend y JavaScript)
 y los otros 2 contenedores serian para la base de datos(MariaDB) del hospital, 1 la base de datos en si y el otro contenedor seria un backup como respaldo de esta.
 
@@ -13,14 +13,13 @@ y los otros 2 contenedores serian para la base de datos(MariaDB) del hospital, 1
 ¿Para qué sirve?
 
 
-Este modulo tiene el proposito de digitalizar documentacion, solucionando un grave problema presente en los hospitales que es el uso de papel, remediando grandes perdidas económicas.
-Dentro de un hospital, facilitará a los medicos y administradores a gestionar sus archivos, que pueden ser radiografias, etc.
+Este modulo tiene el proposito de gestionar solicitudes de traslado, solucionando el problema de gestionar una ambulancia con una flota de transporte muy limitada, dejando a eleccion de los profesionales las solicitudes de prioridad pero estableciendo un sistema de etiquetas que ayudaran a hacer más visibles las mas urgentes.
 
 
 ¿Como se usa?
 
 
-Esta planeado para ser usado mediante un navegador en un sitio web, y mediante ella los doctores o administradores podrán interactuar con la informacion presente de los pacientes.
+Esta planeado para ser usado mediante un navegador en un sitio web, y mediante ella los doctores o administradores podrán visualizar en tiempo real la trayectoria de los pacientes y gestionar solicitudes de traslado.
 
 
 ¿Quienes pueden contribuir con este Proyecto?
