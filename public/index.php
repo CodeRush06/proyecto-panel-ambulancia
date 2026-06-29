@@ -8,9 +8,9 @@
 </head>
 <body>
     <div class="container-fluid">
-         <header class="row bg-white p-4 justify-content-center"> 
+         <header class=" row bg-white p-4 justify-content-center"> 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"> <img src="assets/logo_rgb_200x100.png"></a>
+  <a class="navbar-brand" href="#"> <img src="logo_rgb_200x100.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -25,57 +25,125 @@
 
          </header>
         <div class="row">
-                <aside class="col-md-3 text-white p-4 bg-info d-flex flex-column align-items-center"> <h1 class="h3 text-center m-1">Documentación de "Juan"</h1>  <img src="assets/qr-code.png" class="img-thumbnail mx-auto" width="200px" length="200px">
+                <aside class="col-md-3 text-white p-4 bg-info"> <h1 class="h3 text-center">Panel de seguimiento</h1>  <img src="Screenshotedited.png" class="img-thumbnail" width="600px" length="300px"> <p class="text text-center"> Traslado Seleccionado: "Juana"</p>
 
                 </aside>
-                <main class=" col-md-9 bg-white"><h1 class="h3">Panel de Administración - Resultados de búsqueda "Juan"</h1>
+                <main class=" col-md-9 bg-white"><h1 class="h3">Panel de Administración</h1>
 
-                    <div class="card"> <div class="card-title text-center my-2">Datos de Paciente <span class="font-weight-bold">Juan  </span><button class="button bg-info mx-2 border-0">Modificar</button></div> <div class="card-body">
-                        <table class=" table table-striped mx-2">
-                            <thead> <th> Nombre</th>
-                            <th> Edad </th>
-                            <th> Condicion </th>
-                            <th> Turno </th>
-                            <th> Historial Médico </th>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                <td> Juan</td>
-                                <td> 52</td>
-                                <td> Diabetes</td>
-                                <td> Pendiente </td>
-                                <td> <button class="button bg-info mx-1 border-0">Acceder a historial Medico</button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div></div>
-                    <div class="card"> <div class="card-title text-center my-2"> Formulario <span class="font-weight-bold">Encuesta de Satisfacción  </span><button class="button bg-info mx-2 border-0">Modificar</button></div> <div class="card-body">
+                    <div class="card container-fluid"> <div class="card-title text-center my-2">Solicitudes de Traslado<button class="button bg-info mx-2 border-0">Modificar</button></div><div class="card-body">
+                        <!-- Solicitudes de traslado iniciadas-->
+                         <div class="row">
+                      <div class="col-md-3 text-dark">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h3 class="h1"> Paciente: Juana Lopez</h3>
+                                    <p class="display-6">Destino: Camino Carrasco 1234</p>
+                                    <p class="text-muted">Estado: <span class="badge badge-danger">Aislado</span></p> <button class="button bg-success mx-2 border-0">Aceptar</button> <button class="button bg-danger mx-2 border-0">Rechazar</button>
+                                </div>
+                            </div>
+                    </div>
+                 <div class="col-md-3 text-dark">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h3 class="h1"> Paciente: Felipe Lorenzo</h3>
+                                    <p class="display-6">Destino: Casavalle 1234</p>
+                                    <p class="text-muted">Estado: <span class="badge badge-success">Enfermo</span> <span class="badge badge-secondary">Acompañado</span> <span class="badge badge-info">Necesita Oxigeno</span></p> <button class="button bg-success mx-2 border-0">Aceptar</button> <button class="button bg-danger mx-2 border-0">Rechazar</button>
+                                </div>
+                            </div>
+                    </div>
+                 <div class="col-md-3 text-dark">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h3 class="h1"> Organo: Riñon</h3>
+                                    <p class="display-6">Origen: Hospital de Clinicas. Destino: Hospital Pasteur </p>
+                                    <p class="text-muted">Estado: <span class="badge badge-danger">Sano</span></p> <button class="button bg-success mx-2 border-0">Aceptar</button> <button class="button bg-danger mx-2 border-0">Rechazar</button>
+                                </div>
+                            </div>
+                    </div>
+                
+                   
+                </div>
+                </div>
+                    <div class="card"> <div class="card-title text-center my-2"> Formulario <span class="font-weight-bold">Peticion de traslado para Pacientes  </span><button class="button bg-info mx-2 border-0">Modificar</button></div> <div class="card-body">
                         <form>
                             <div class="form-group">
-                                 <label for="exampleInput1">Ingresar Cédula</label>
+                                 <label for="exampleInput1">Ingresar Cédula de Paciente</label>
                                  <input type="text" class="form-control" id="exampleInput1" placeholder="Ingresar Cédula">
-                                  <small id="InputHelp" class="form-text text-muted">Esta encuesta es anónima. Tu cedula no será registrada.</small>
                             </div>
                             <div class="form-group">
-                                 <label for="miLista">Ingrese Sala de consulta en la que ha sido atendido/atendida  </label>
-                                <select class="form-select" id="miLista">
-                                      <option selected>Elige una opción...</option>
-                                    <option value="1">Sala 1 (Pediatria)</option>
-                                    <option value="2">Sala 2 (Odontologia)</option>
-                                    <option value="3">Sala 3 (Ginecologia)</option>
-                                  </select>
+                                 <label for="defaultRadio"> Ingrese estado reportado del paciente llenando las casillas  </label>
+                                 <div class="form-check form-check-inline">
+                                 <input class="form-check-input" name="radios" type="radio" value="" id="defaultRadio">
+                                 <label class="form-check-label" for="defaultRadio">
+                               <span class="badge badge-success"> Sano</span>
+                                 </label>
+                                </div>
+                                 <div class="form-check form-check-inline">
+                                 <input class="form-check-input" name="radios" type="radio" value="" id="defaultRadio">
+                                 <label class="form-check-label" for="defaultRadio">
+                               <span class="badge badge-warning"> Enfermo </span>
+                                 </label>
+                                </div>
+                                 <div class="form-check form-check-inline">
+                                 <input class="form-check-input" name="radios" type="radio" value="" id="defaultRadio">
+                                 <label class="form-check-label" for="defaultRadio">
+                               <span class="badge badge-danger"> Aislado</span>
+                                 </label>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="Clasif">Clasifique su experiencia (Azul es positivo)</label>
-                                
-                                <input type="range" class="form-control-range" id="Clasif"> 
+
+
+
+                                <div class="form-group">
+                                 <label for="defaultCheck1"> Ingrese equipamiento que necesite el paciente  </label>
+                                 <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                 <label class="form-check-label" for="defaultCheck1">
+                                    <span class="badge badge-info"> Oxigeno</span>
+                                 </label>
+                                </div>
+                                 <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                 <label class="form-check-label" for="defaultCheck1">
+                               <span class="badge badge-warning"> Resucitador Electrico</span>
+                                 </label>
+                                </div>
+                                 <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                 <label class="form-check-label" for="defaultCheck1">
+                               <span class="badge badge-danger"> Monitor Cardiáco</span>
+                                 </label>
+                                </div>
                             </div>
+                                <div class="form-group">
+                                 <label for="defaultRadio1"> El paciente está acompañado? </label>
+                                 <div class="form-check form-check-inline">
+                                 <input class="form-check-input" name="exampleRadios" type="radio" value="" id="defaultRadio1">
+                                 <label class="form-check-label" for="defaultRadio1">
+                               <span class="badge badge-primary"> Si</span>
+                                 </label>
+                                </div>
+                                 <div class="form-check form-check-inline">
+                                 <input class="form-check-input" name= "exampleRadios"type="radio" value="" id="defaultRadio1">
+                                 <label class="form-check-label" for="defaultRadio1">
+                               <span class="badge badge-secondary"> No</span>
+                                 </label>
+                            
+                                 </div>
+                                  
+                                 <div class="form-group">
+                                 <label for="exampleFormControlTextarea1">Ingrese destino / ubicacion del paciente</label>
+                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                            </div>
+
+
+                        
                             <div class="form-group">
-                                 <label for="exampleFormControlTextarea1">Ingrese recomendación/opinion</label>
+                                 <label for="exampleFormControlTextarea1">Ingrese comentarios</label>
                                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
 
-                           <button type="submit" class="btn btn-outline-info">Enviar</button>
+                           <button type="submit" class="btn btn-outline-info">Enviar Solicitud de traslado</button>
                         </form>
                     
                     </div></div>
