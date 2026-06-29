@@ -6,7 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
     <div class="container-fluid">
         <header class=" row bg-white p-4 justify-content-center">
             <!-- Barra de navegacion e interfaz de Clinicas-->
@@ -26,6 +25,7 @@
                   </div>
             </nav>
          </header>
+    <body>
         <div class="row">
                 <aside class="col-md-3 text-white p-4 bg-info">
                     <!-- Panel de seguimiento de traslado-->
@@ -181,5 +181,5 @@
 </div>
                             
      <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    </body>
 </html>
