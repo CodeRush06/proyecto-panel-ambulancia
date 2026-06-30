@@ -44,11 +44,11 @@
                         <!-- Solicitudes de traslado por iniciar-->
                             <!-- 1er solicitud de traslado-->
                          <div class="row">
-                              <div class="col-md-3 text-dark">
+                              <div class="col-md-3 text-dark col-12 col-md-4 col-lg-3">
                                 <div class="card text-center">
                                     <div class="card-body">
                                         <h3 class="h1"> Paciente: Juana Lopez</h3>
-                                        <p class="display-6">Destino: Camino Carrasco 1234</p>
+                                        <p class="card-text fs-6 text-secondary">Destino: Camino Carrasco 1234</p>
                                         <p class="text-muted">Estado: 
                                             <span class="badge badge-danger">Aislado</span>
                                         </p> 
@@ -58,11 +58,11 @@
                                 </div>
                                 </div>
                              <!-- 3er solicitud de traslado-->
-                             <div class="col-md-3 text-dark">
+                             <div class="col-md-3 text-dark col-12 col-md-4 col-lg-3">
                                     <div class="card text-center">
                                         <div class="card-body">
                                             <h3 class="h1"> Paciente: Felipe Lorenzo</h3>
-                                            <p class="display-6">Destino: Casavalle 1234</p>
+                                            <p class="card-text fs-6 text-secondary">Destino: Casavalle 1234</p>
                                             <p class="text-muted">Estado: 
                                                 <span class="badge badge-success">Enfermo</span>
                                                 <span class="badge badge-secondary">Acompañado</span> 
@@ -74,11 +74,11 @@
                                     </div>
                             </div>
                              <!-- 3er solicitud de traslado-->
-                             <div class="col-md-3 text-dark">
+                             <div class="col-md-3 text-dark col-12 col-md-4 col-lg-3">
                                     <div class="card text-center">
                                         <div class="card-body">
                                             <h3 class="h1"> Organo: Riñon</h3>
-                                            <p class="display-6">Origen: Hospital de Clinicas. Destino: Hospital Pasteur </p>
+                                            <p class="card-text fs-6 text-secondary">Origen: Hospital de Clinicas. Destino: Hospital Pasteur </p>
                                             <p class="text-muted">Estado: <span class="badge badge-danger">Sano</span>
                                             </p> 
                                             <button class="button bg-success mx-2 border-0">Aceptar</button> 
